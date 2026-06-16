@@ -1,0 +1,253 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNitETch/wOTeWVYK4Vr0+I",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/andradeecla213/Programa-o-algoritimo-1F/blob/main/PAPROVA\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xD-mRns8I4bj",
+        "outputId": "54d8683a-7869-4c81-cc4f-c3898f5ee852"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "7\n",
+            "8\n",
+            "9\n",
+            "10\n",
+            "11\n",
+            "12\n",
+            "13\n",
+            "14\n",
+            "15\n",
+            "16\n",
+            "17\n",
+            "18\n",
+            "19\n",
+            "20\n"
+          ]
+        }
+      ],
+      "source": [
+        "# contagem de 1 a 20\n",
+        "\n",
+        "for i in range (0,21):\n",
+        "  print (i)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# soma dos números\n",
+        "\n",
+        "numero = int(input ( \"Digite um número: \"))\n",
+        "\n",
+        "soma = 0\n",
+        "for i in range (1, numero +1):\n",
+        "  soma = soma + i\n",
+        "  print(soma)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ah9oPk3uJQtC",
+        "outputId": "7dffe430-4c14-43f6-a947-9ea591ee0a46"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número: 10\n",
+            "1\n",
+            "3\n",
+            "6\n",
+            "10\n",
+            "15\n",
+            "21\n",
+            "28\n",
+            "36\n",
+            "45\n",
+            "55\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Tabuada\n",
+        "\n",
+        "numero = int (input(\"Digite um número: \"))\n",
+        "\n",
+        "for i in range (1,11):\n",
+        "  print(f\" {numero} x {i} = {numero*i}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0vGC6U00L4wx",
+        "outputId": "84bd41fb-7bd2-421a-f3e0-b04669af18d6"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número: 2\n",
+            " 2 x 1 = 2\n",
+            " 2 x 2 = 4\n",
+            " 2 x 3 = 6\n",
+            " 2 x 4 = 8\n",
+            " 2 x 5 = 10\n",
+            " 2 x 6 = 12\n",
+            " 2 x 7 = 14\n",
+            " 2 x 8 = 16\n",
+            " 2 x 9 = 18\n",
+            " 2 x 10 = 20\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Fatorial\n",
+        "\n",
+        "numero = int(input(\"Digite um número inteiro positivo: \"))\n",
+        "\n",
+        "fatorial = 1\n",
+        "\n",
+        "for i in range(1, numero + 1): fatorial *= i\n",
+        "\n",
+        "print(f\"O fatorial de {numero} é {fatorial}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_U6Gl9R8TEtk",
+        "outputId": "d3665e46-1f47-48e4-d739-f3eeb9f17bdb"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número inteiro positivo: 5\n",
+            "O fatorial de 5 é 120\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#cedulas\n",
+        "valor = int (input(\"Digite um valor: \"))\n",
+        "\n",
+        "qtd100 = 0\n",
+        "while valor >= 100:\n",
+        "    valor -=100\n",
+        "    qtd100 +=1\n",
+        "\n",
+        "qtd50 = 0\n",
+        "while valor >= 50:\n",
+        "    valor -= 50\n",
+        "    qtd50 +=1\n",
+        "\n",
+        "qtd20 = 0\n",
+        "while valor >= 20:\n",
+        "    valor -= 20\n",
+        "    qtd20 +=1\n",
+        "\n",
+        "qtd10 = 0\n",
+        "while valor >= 10:\n",
+        "    valor -= 10\n",
+        "    qtd10 +=10\n",
+        "\n",
+        "qtd5 = 0\n",
+        "while valor >= 5:\n",
+        "    valor -= 5\n",
+        "    qtd5 +=1\n",
+        "\n",
+        "qtd2 = 0\n",
+        "while valor >= 2:\n",
+        "    valor -= 2\n",
+        "    qtd2 +=1\n",
+        "\n",
+        "print (f\"Notas de 100: {qtd100}\")\n",
+        "print (f\"Notas de 50: {qtd50}\")\n",
+        "print (f\"Notas de 20: {qtd20}\")\n",
+        "print (f\"Notas de 10: {qtd10}\")\n",
+        "print (f\"Notas de 5: {qtd5}\")\n",
+        "print (f\"Notas de 2: {qtd2}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "DoiP4ZUGXD6Y",
+        "outputId": "a8e53c55-7b0d-4d41-8f06-a23c54de35e6"
+      },
+      "execution_count": 64,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um valor: 202\n",
+            "Notas de 100: 2\n",
+            "Notas de 50: 0\n",
+            "Notas de 20: 0\n",
+            "Notas de 10: 0\n",
+            "Notas de 5: 0\n",
+            "Notas de 2: 1\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
